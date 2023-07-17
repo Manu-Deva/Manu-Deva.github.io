@@ -30,34 +30,34 @@ const AboutSection = () => {
               {" "}
               Hi, my name is Manu and I am a{" "}
               <span className="font-bold">{"curious"}</span>,
-              <span className="font-bold"> </span>, and
-              <span className="font-bold">{" determined"}</span> student based
-              in Evanston, IL.
+              <span className="font-bold"> {"passionate"} </span>, and
+              <span className="font-bold"> {"dedicated"}</span> student based in
+              Evanston, IL.
             </p>
             <br />
             <p>
-              I graudeffnganrjgnajgnjesgnjgjktg tg sgnj ntgjnjn jngjgnggr and
-              have been working gnr rgn jjg nesnj nrj r ever since.
+              I'm a rising junior at Northwestern University, with a Computer
+              Science major and Economics minor. I'm the current CTO of Student
+              Holdings, a student-run business in Evanston, IL, and an app
+              developer intern at Origin Robots Company, a robotics startup
+              based in Evanston, IL.
             </p>
             <br />
             <p>
-              I have a wide range of hobbies and passions that keepm y busy,
-              incldung rading nfnf runnign and gadening and bulding and sewing I
-              am always looking for new thing and epxries to sod and love to
-              keep myslef enageed ein ieniet nthings.
+              I primarily code in Python, with experience in data structures,
+              machine learning, and simple applications. I also have experience
+              with C++ and Java, and computer systems programming in C and
+              Linux. I hope to eventually integrate my interest in economics
+              with computer science as a developer.
             </p>
             <br />
             <p>
-              {" "}
-              I believe that you should{" "}
-              <span className="font-bold text-green-800">
-                never stop growing
-              </span>{" "}
-              and that&#39;s what I strive to do, I have a passion for technoloy
-              and a desire to always push the limtis of what is possible. I am
-              excited to enter a career of growth and new opportunities and
-              can&#39;t wait to build my skills even more.
+              My hobbies and passions include basketball, gaming, clothing
+              design, music production, art, and more. I'm always trying to
+              integrate these passions with my skills in computer science and
+              make them more fun!
             </p>
+            <br />
           </div>
           <div className="md:w-1/2">
             <h1 className="about-title">My Skills</h1>

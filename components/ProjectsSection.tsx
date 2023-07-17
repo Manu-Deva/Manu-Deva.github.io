@@ -6,35 +6,36 @@ import SlideUp from "./SlideUp";
 
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: "ORCO App Executable",
     description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-    image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+      "The ORCO desktop app is designed to provide control and visualization for Origin Robots Company's prosthetic arm. Prototyped with Figma, built with electronJS and soon to be ported to React.",
+    image: "/orcoThumbnail.png",
+    github: "https://github.com/Origin-Robots-Company/AppDev",
+    link: "https://github.com/Origin-Robots-Company/AppDev",
   },
   {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
+    name: "Ludobots",
+    description:
+      "I used the Ludobots MOOC and inspiration from Professor Sam Kriegman's Xenobots Lab to model the evolution of artifical life forms. Built with Python and the Pyrosim interface.",
+    image: "/ludobotsThumbnail.png",
+    github: "https://github.com/Manu-Deva/ludobots-md",
+    link: "https://www.youtube.com/watch?v=BKG4CtIoVcM",
   },
   {
-    name: "Kator Family Photos",
+    name: "Portfolio Website",
     description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
+      "This website was built with NextJS and TailwindCSS. It is a work in progress and I am always looking for ways to improve it!",
+    image: "/portfolioThumbnail.png",
+    github: "https://github.com/Manu-Deva/Manu-Deva.github.io",
+    link: "https://manudeva.com",
+  },
+  {
+    name: "TetrisC",
+    description:
+      "TetrisC is a rework of the popular Tetris game buit in C++ with the ge211 game engine.",
     image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
-  },
-  {
-    name: "Kator Family Photos",
-    description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+    github: "https://github.com/Manu-Deva/tetrisC",
+    link: "https://github.com/Manu-Deva/tetrisC",
   },
 ];
 
