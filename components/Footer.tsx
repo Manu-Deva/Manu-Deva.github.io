@@ -15,30 +15,20 @@ const Footer = () => {
           © 2023 Manu Deva<a href="/" className="hover:underline"></a>
         </div>
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
-          <a href="https://github.com/hqasmei" rel="noreferrer" target="_blank">
-            <AiOutlineGithub className="footer-icon" size={30} />
-          </a>
           <a
-            href="https://twitter.com/hqasmei"
+            href="https://github.com/Manu-Deva"
             rel="noreferrer"
             target="_blank"
           >
-            <AiOutlineTwitter className="footer-icon" size={30} />
+            <AiOutlineGithub className="footer-icon" size={30} />
           </a>
 
           <a
-            href="https://www.linkedin.com/in/hosnaqasmei/"
+            href="https://www.linkedin.com/in/manudeva/"
             rel="noreferrer"
             target="_blank"
           >
             <AiOutlineLinkedin className="footer-icon" size={30} />
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineYoutube className="footer-icon" size={30} />
           </a>
         </div>
       </div>

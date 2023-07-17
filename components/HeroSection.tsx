@@ -2,7 +2,13 @@
 import React from "react";
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
+import {
+  BsGithub,
+  BsLinkedin,
+  BsFillFileEarmarkTextFill,
+} from "react-icons/bs";
 import { HiArrowDown } from "react-icons/hi";
+import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 const HeroSection = () => {
   return (
     <section id="home">
@@ -30,17 +36,41 @@ const HeroSection = () => {
             in Evanston, IL. Working on improving my full-stack development
             skills and minimizing the roadblocks in life.
           </p>
-          <Link
-            to="projects"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-brown-1 rounded shadow hover:bg-dark-brown-1"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-            Projects
-          </Link>
+          <div className="flex flex-row space-x-4">
+            <Link
+              to="projects"
+              className="text-neutral-100 font-semibold px-6 py-3 bg-brown-1 rounded shadow hover:bg-dark-brown-1"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Projects
+            </Link>
+            <Link
+              href={"https://github.com/Manu-Deva"}
+              target="_blank"
+              className="self-center"
+            >
+              <BsGithub size={30} className="project-icon" />
+            </Link>
+
+            <Link
+              href={"https://www.linkedin.com/in/manudeva/"}
+              target="_blank"
+              className="self-center"
+            >
+              <BsLinkedin size={30} className="project-icon" />
+            </Link>
+            <Link
+              href={"https://www.linkedin.com/in/manudeva/"}
+              target="_blank"
+              className="self-center"
+            >
+              <BsFillFileEarmarkTextFill size={30} className="project-icon" />
+            </Link>
+          </div>
         </div>
       </div>
       <div className="flex flex-row justify-center">
