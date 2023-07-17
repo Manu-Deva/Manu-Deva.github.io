@@ -1,17 +1,20 @@
-# Tailwind CSS and Next.js Portfolio
+# manudeva.com
 
-This is a template for creating a portfolio with Tailwind CSS and Next.js.
+Current (as of July 2023) porfolio for Manu Deva, built with nextJS and Tailwind!
 
-
-## How it works
-
+![image](https://github.com/Manu-Deva/Manu-Deva.github.io/assets/94333898/e338a176-4936-45ad-8f83-46f47f613a3c)
 
 
-## Running Locally
+## To Run
 
-Can run the application in VS Code or a terminal and it will be available at `http://localhost:3000`.
-
-```bash
-npm install
-npm run dev
-```
+1. Clone repository from the 'Code" button
+2. Install the dependencies
+   
+    ```sh
+   npm install
+   ```
+3. Start a dev server
+   
+    ```sh
+   npm run start
+   ``` 
