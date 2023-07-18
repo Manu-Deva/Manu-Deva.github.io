@@ -12,7 +12,7 @@ import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 const HeroSection = () => {
   return (
     <section id="home">
-      <div className="hero">
+      <div className="hero [@media(min-width:1920px)]:mb-48">
         <div className="md:w-1/2 md:mt-2">
           <Image
             className="rounded-full shadow-2xl"
