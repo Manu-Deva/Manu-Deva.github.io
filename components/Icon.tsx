@@ -8,7 +8,7 @@ import {
   Html5Original,
   Css3Original,
   JavaOriginal,
-  TailwindcssOriginal,
+  //   TailwindcssOriginal,
   FigmaOriginal,
   LinuxOriginal,
   GitOriginal,
