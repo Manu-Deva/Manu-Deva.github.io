@@ -29,10 +29,6 @@ import {
   SwiftOriginal,
 } from "devicons-react";
 
-interface IconType {
-  type: string;
-}
-
 ("use-client");
 
 function Icon(props: { iconName: string }) {
@@ -67,7 +63,8 @@ function Icon(props: { iconName: string }) {
     Swift: SwiftOriginal,
   };
   var iconType = props.iconName;
-  var SomeIcon = iconType in icons ? icons[iconType] : PythonOriginal;
+  var SomeIcon =
+    iconType in icons ? icons[iconType as keyof typeof icons] : PythonOriginal;
   return (
     <div className="app">
       <SomeIcon size={40} />
