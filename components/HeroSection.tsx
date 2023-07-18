@@ -36,7 +36,7 @@ const HeroSection = () => {
             in Evanston, IL. Working on improving my full-stack development
             skills and minimizing the roadblocks in life.
           </p>
-          <div className="flex flex-row space-x-4">
+          <div className="flex flex-row space-x-4 justify-center md:justify-start">
             <Link
               to="projects"
               className="text-neutral-100 font-semibold px-6 py-3 bg-brown-1 rounded shadow hover:bg-dark-brown-1"

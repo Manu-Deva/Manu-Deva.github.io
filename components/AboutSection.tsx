@@ -1,24 +1,45 @@
 import React from "react";
 import Image from "next/image";
+import { ThreejsOriginal, JavascriptOriginal } from "devicons-react";
+import Icon from "./Icon";
 const skills = [
+  { skill: "Python" },
+  { skill: "JavaScript" },
+  { skill: "C++" },
+  { skill: "C" },
+  { skill: "React" },
   { skill: "HTML" },
   { skill: "CSS" },
-  { skill: "JavaScript" },
-  { skill: "TypeScript" },
-  { skill: "Python" },
-  { skill: "React" },
-  { skill: "Next.js" },
+  { skill: "Java" },
   { skill: "TailwindCSS" },
+  { skill: "Figma" },
+  { skill: "Linux" },
   { skill: "Git" },
-  { skill: "C++" },
+  { skill: "npm" },
+  { skill: "Node.js" },
+  { skill: "Nextjs" },
   { skill: "Express" },
-  { skill: "mongoDB" },
+  { skill: "Flask" },
+  { skill: "numpy" },
+  { skill: "Firebase" },
+  { skill: "MATLAB" },
+];
+
+const workingSkills = [
+  { skill: "MongoDB" },
+  { skill: "MySQL" },
+  { skill: "TypeScript" },
+  { skill: "ThreeJS" },
+  { skill: "AWS" },
+  { skill: "Docker" },
+  { skill: "Kotlin" },
+  { skill: "Swift" },
 ];
 
 const AboutSection = () => {
   return (
     <section id="about">
-      <div className="my-12 pb-12 md:pt-8 md:pb-36">
+      <div className="my-12 pb-12 md:pt-8 md:pb-20">
         <h1 className="text-center font-bold text-4xl">
           About me{" "}
           <hr className="w-6 h-1 mx-auto my-4 bg-brown-1 border-0 rounded"></hr>
@@ -30,7 +51,7 @@ const AboutSection = () => {
               {" "}
               Hi, my name is Manu and I am a{" "}
               <span className="font-bold">{"curious"}</span>,
-              <span className="font-bold"> {"passionate"} </span>, and
+              <span className="font-bold"> {"passionate"}</span>, and
               <span className="font-bold"> {"dedicated"}</span> student based in
               Evanston, IL.
             </p>
@@ -44,11 +65,12 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              I primarily code in Python, with experience in data structures,
-              machine learning, and simple applications. I also have experience
-              with C++ and Java, and computer systems programming in C and
-              Linux. I hope to eventually integrate my interest in economics
-              with computer science as a developer.
+              I primarily code in Python concerning data structures, machine
+              learning, and app development, with experience in C++ and Java.
+              I've also done computer systems programming in C and Linux and app
+              development with React, Javascript, and other frameworks. I hope
+              to eventually integrate my interest in economics with computer
+              science as a developer.
             </p>
             <br />
             <p>
@@ -61,19 +83,37 @@ const AboutSection = () => {
           </div>
           <div className="md:w-1/2">
             <h1 className="about-title">My Skills</h1>
-            <div className="flex flex-wrap flex-row justify-center md:justify-start">
+            <div className="grid grid-rows-4 grid-cols-5 justify-center md:justify-start mb-6 space-y-2">
               {skills.map((item, idx) => {
                 return (
-                  <p
-                    key={idx}
-                    className="bg-cream-2 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
-                  >
-                    {item.skill}
-                  </p>
+                  <div className="flex flex-col items-center">
+                    <Icon iconName={item.skill} />
+                    <p
+                      key={idx}
+                      className="px-4 pb-1 mt-1 rounded font-semibold"
+                    >
+                      {item.skill}
+                    </p>
+                  </div>
                 );
               })}
             </div>
-            <Image src="/hero-image.png" alt="" width={325} height={325} />
+            <h1 className="about-title">Working On</h1>
+            <div className="grid grid-rows-4 grid-cols-5 justify-center md:justify-start mb-6 space-y-2">
+              {workingSkills.map((item, idx) => {
+                return (
+                  <div className="flex flex-col items-center">
+                    <Icon iconName={item.skill} />
+                    <p
+                      key={idx}
+                      className="px-4 pb-1 mt-1 rounded font-semibold"
+                    >
+                      {item.skill}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
