@@ -48,28 +48,28 @@ const HeroSection = () => {
             >
               Projects
             </Link>
-            <Link
+            <a
               href={"https://github.com/Manu-Deva"}
               target="_blank"
               className="self-center"
             >
               <BsGithub size={30} className="project-icon" />
-            </Link>
+            </a>
 
-            <Link
+            <a
               href={"https://www.linkedin.com/in/manudeva/"}
               target="_blank"
               className="self-center"
             >
               <BsLinkedin size={30} className="project-icon" />
-            </Link>
-            <Link
+            </a>
+            <a
               href={"https://www.linkedin.com/in/manudeva/"}
               target="_blank"
               className="self-center"
             >
               <BsFillFileEarmarkTextFill size={30} className="project-icon" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
