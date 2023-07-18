@@ -29,7 +29,7 @@ const HeroSection = () => {
           </h1>
           <p className="text-lg mt-3 mb-6 md:text-2xl">
             {" "}
-            I&#39;m a aspiring software engineer studying at{" "}
+            I&#39;m an aspiring software engineer studying at{" "}
             <span className="font-semibold text-purple-800">
               Northwestern University
             </span>{" "}
