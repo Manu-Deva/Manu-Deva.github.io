@@ -34,7 +34,7 @@ const projects = [
     name: "TetrisC",
     description:
       "TetrisC is a rework of the popular Tetris game buit in C++ with the ge211 game engine.",
-    image: "/familyphotos.png",
+    image: "/tetrisThumbnail.png",
     github: "https://github.com/Manu-Deva/tetrisC",
     link: "https://github.com/Manu-Deva/tetrisC",
   },
