@@ -30,9 +30,14 @@ const HeroSection = () => {
           <p className="text-lg mt-3 mb-6 md:text-2xl">
             {" "}
             I&#39;m an aspiring software engineer studying at{" "}
-            <span className="font-semibold text-purple-800">
-              Northwestern University
-            </span>{" "}
+            <a
+              href="https://www.mccormick.northwestern.edu/computer-science/"
+              target="_blank"
+              className="font-semibold text-purple-800"
+            >
+              {/* <span className="font-semibold text-purple-800"> */}
+              Northwestern University{" "}
+            </a>
             in Evanston, IL. Working on improving my full-stack development
             skills and minimizing the roadblocks in life.
           </p>
