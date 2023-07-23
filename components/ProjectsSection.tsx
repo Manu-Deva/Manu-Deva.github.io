@@ -47,11 +47,11 @@ const ProjectsSection = () => {
         Projects
         <hr className="w-6 h-1 mx-auto my-4 bg-brown-1 border-0 rounded"></hr>
       </h1>
-      <div className="grid grid-rows-3 grid-cols-2">
+      <div className="grid grid-rows-4 grid-cols-1 md:grid-rows-3 md:grid-cols-2">
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
-              <div className="flex flex-row -2 md:flex-col md:space-x-12">
+              <div className="flex flex-col md:space-x-12">
                 <div className="mt-8 mx-4">
                   <Link href={project.link} target="_blank">
                     <Image
@@ -65,7 +65,9 @@ const ProjectsSection = () => {
                 </div>
 
                 <div className="mt-12">
-                  <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
+                  <h1 className="text-left text-4xl font-bold mb-6">
+                    {project.name}
+                  </h1>
                   <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                     {project.description}
                   </p>
