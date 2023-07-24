@@ -39,7 +39,7 @@ const HeroSection = () => {
               Northwestern University{" "}
             </a>
             in Evanston, IL. Working on improving my full-stack development
-            skills and minimizing the roadblocks in life.
+            skills and enhancing quality of life for people.
           </p>
           <div className="flex flex-row space-x-4 justify-center md:justify-start">
             <Link
@@ -69,7 +69,7 @@ const HeroSection = () => {
               <BsLinkedin size={30} className="project-icon" />
             </a>
             <a
-              href={"https://www.linkedin.com/in/manudeva/"}
+              href={"./public/MD0723.pdf"}
               target="_blank"
               className="self-center"
             >

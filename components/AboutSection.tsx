@@ -59,8 +59,10 @@ const AboutSection = () => {
             <p>
               I'm a rising junior majoring in Computer Science with an Economics
               minor. I'm the current CTO of Student Holdings, a student-run
-              business in Evanston, IL, and an app developer intern at Origin
-              Robots Company, a robotics startup based in Evanston, IL.
+              business catering to Northwestern students in Evanston, IL, and an 
+			  app developer intern at Origin Robots Company, a robotics startup 
+			  focused on creating prostheses for bionics research and amputees, 
+			  based in Evanston, IL.
             </p>
             <br />
             <p>
