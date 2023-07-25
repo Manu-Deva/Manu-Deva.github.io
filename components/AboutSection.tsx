@@ -5,9 +5,9 @@ import Icon from "./Icon";
 const skills = [
   { skill: "Python" },
   { skill: "JavaScript" },
+  { skill: "React" },
   { skill: "C++" },
   { skill: "C" },
-  { skill: "React" },
   { skill: "HTML" },
   { skill: "CSS" },
   { skill: "Java" },
@@ -16,8 +16,8 @@ const skills = [
   { skill: "Linux" },
   { skill: "Git" },
   { skill: "npm" },
-  { skill: "NodeJS" },
-  { skill: "Nextjs" },
+  { skill: "Node.js" },
+  { skill: "Next.js" },
   { skill: "Express" },
   { skill: "Flask" },
   { skill: "numpy" },
@@ -49,29 +49,28 @@ const AboutSection = () => {
             <h1 className="about-title">Get to know me!</h1>
             <p>
               {" "}
-              Hi, my name is Manu and I am a{" "}
+              Hi, I'm Manu and I am a{" "}
               <span className="font-bold">{"curious"}</span>,
               <span className="font-bold"> {"passionate"}</span>, and
               <span className="font-bold"> {"dedicated"}</span> student based at
-              Northwestern University in Evanston, IL.
+              Northwestern University in Evanston, IL. I'm a rising junior
+              majoring in Computer Science with a minor in Economics.
             </p>
             <br />
             <p>
-              I'm a rising junior majoring in Computer Science with an Economics
-              minor. I'm the current CTO of Student Holdings, a student-run
-              business catering to Northwestern students in Evanston, IL, and an 
-			  app developer intern at Origin Robots Company, a robotics startup 
-			  focused on creating prostheses for bionics research and amputees, 
-			  based in Evanston, IL.
+              I'm the current CTO of Student Holdings, a student-run business
+              catering to Northwestern students in Evanston, IL. I'm also an app
+              developer intern at Origin Robots Company, a robotics startup
+              focused on creating prostheses for bionics research and amputees.
             </p>
             <br />
             <p>
-              I code primarily in Python concerning data structures, machine
-              learning, and app development, with experience in C++ and Java.
-              I've also done computer systems programming in C and Linux and app
-              development with React, Javascript, and other frameworks. I hope
-              to eventually integrate my interest in economics with computer
-              science as a developer.
+              I code primarily in Python for data structures, machine learning,
+              and app development, with experience in C++ and Java. I also do
+              computer systems programming in C and Linux and app development
+              with React, Javascript, and other frameworks. I hope to eventually
+              integrate my interest in economics with computer science as a
+              developer.
             </p>
             <br />
             <p>
