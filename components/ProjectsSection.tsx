@@ -47,7 +47,7 @@ const ProjectsSection = () => {
         Projects
         <hr className="w-6 h-1 mx-auto my-4 bg-brown-1 border-0 rounded"></hr>
       </h1>
-      <div className="grid grid-rows-4 grid-cols-1 md:grid-rows-3 md:grid-cols-2">
+      <div className="grid grid-rows-4 grid-cols-1 md:grid-rows-2 md:grid-cols-2">
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
