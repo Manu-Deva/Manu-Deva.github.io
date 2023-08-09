@@ -83,7 +83,7 @@ const AboutSection = () => {
           </div>
           <div className="md:w-1/2">
             <h1 className="about-title">My Skills</h1>
-            <div className="grid grid-rows-4 grid-cols-5 justify-center md:justify-start mb-6 space-y-2">
+            <div className="grid grid-rows-4 grid-cols-5 justify-center md:justify-start mb-6 gap-y-2">
               {skills.map((item, idx) => {
                 return (
                   <div className="flex flex-col items-center">
@@ -99,7 +99,7 @@ const AboutSection = () => {
               })}
             </div>
             <h1 className="about-title">Working On</h1>
-            <div className="grid grid-rows-4 grid-cols-5 justify-center md:justify-start mb-6 space-y-2">
+            <div className="grid grid-rows-4 grid-cols-5 justify-center md:justify-start mb-6 ">
               {workingSkills.map((item, idx) => {
                 return (
                   <div className="flex flex-col items-center">
