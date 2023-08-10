@@ -9,10 +9,10 @@ const projects = [
   {
     name: "ORCO App Executable",
     description:
-      "The ORCO desktop app is designed to provide control and visualization for Origin Robots Company's prosthetic arm. Prototyped with Figma, built with electronJS and soon to be ported to React.",
+      "The ORCO desktop app provides control and visualization for Origin Robots Company's prosthetic arm. Prototyped with Figma, built with electronJS and soon to be ported to React.",
     image: "/orcoThumbnail.png",
     github: "https://github.com/Origin-Robots-Company/AppDev",
-    link: "https://github.com/Origin-Robots-Company/AppDev",
+    link: "https://www.originrobots.com/",
   },
   {
     name: "Ludobots",
@@ -33,10 +33,26 @@ const projects = [
   {
     name: "TetrisC",
     description:
-      "TetrisC is a rework of the popular Tetris game buit in C++ with the ge211 game engine.",
+      "TetrisC is a rework of the popular Tetris game built in C++ with the ge211 game engine.",
     image: "/tetrisThumbnail.png",
     github: "https://github.com/Manu-Deva/tetrisC",
     link: "https://github.com/Manu-Deva/tetrisC",
+  },
+  {
+    name: "Mag-2-Web",
+    description:
+      "A collection of digital editions of North By Northwestern's magazine articles, designed by me as an Interactives Editor for NbN.",
+    image: "/mag2webThumbnail.png",
+    github: "https://github.com/Manu-Deva/mag2web",
+    link: "https://northbynorthwestern.com/winter-2023-magazine/",
+  },
+  {
+    name: "OptiSkate",
+    description:
+      "A simple solution to sensing and illuminating the ground when skateboarding at night. Ideated, rapidly prototyped, developed, and tested over 10 weeks of market research for an engineering design class.",
+    image: "/optiskateThumbnail.jpg",
+    github: "https://github.com/Manu-Deva/tetrisC",
+    link: "https://optiskate.notion.site/optiskate/OptiSkate-edfeacaf60084daf95c0c4714756cdc9",
   },
 ];
 
@@ -47,7 +63,7 @@ const ProjectsSection = () => {
         Projects
         <hr className="w-6 h-1 mx-auto my-4 bg-brown-1 border-0 rounded"></hr>
       </h1>
-      <div className="grid grid-rows-4 grid-cols-1 md:grid-rows-2 md:grid-cols-2">
+      <div className="grid grid-rows-4 grid-cols-1 gap-y-2 md:grid-rows-3 md:grid-cols-2">
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
