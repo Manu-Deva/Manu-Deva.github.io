@@ -15,10 +15,10 @@ import {
   NpmOriginalWordmark,
   NodejsOriginal,
   NextjsOriginal,
+  ElectronOriginal,
   ExpressOriginal,
-  FlaskOriginal,
-  NumpyOriginal,
   FirebasePlain,
+  NumpyOriginal,
   MatlabOriginal,
   MongodbOriginal,
   MysqlOriginal,
@@ -28,11 +28,17 @@ import {
   DockerOriginal,
   KotlinOriginal,
   SwiftOriginal,
+  BehanceOriginal,
 } from "devicons-react";
 
 ("use-client");
 
-function Icon(props: { iconName: string }) {
+interface IconProps {
+  iconName: string;
+  size?: number;
+}
+
+function Icon({ iconName, size = 40 }: IconProps) {
   const icons = {
     Python: PythonOriginal,
     JavaScript: JavascriptOriginal,
@@ -49,8 +55,8 @@ function Icon(props: { iconName: string }) {
     npm: NpmOriginalWordmark,
     "Node.js": NodejsOriginal,
     "Next.js": NextjsOriginal,
+    Electron: ElectronOriginal,
     Express: ExpressOriginal,
-    Flask: FlaskOriginal,
     numpy: NumpyOriginal,
     Firebase: FirebasePlain,
     MATLAB: MatlabOriginal,
@@ -63,14 +69,15 @@ function Icon(props: { iconName: string }) {
     Kotlin: KotlinOriginal,
     Swift: SwiftOriginal,
   };
-  var iconType = props.iconName;
   var SomeIcon =
-    iconType in icons ? icons[iconType as keyof typeof icons] : PythonOriginal;
+    iconName in icons ? icons[iconName as keyof typeof icons] : PythonOriginal;
   return (
     <div className="app">
-      <SomeIcon size={40} />
+      <SomeIcon size={size} />
     </div>
   );
 }
+
+Icon.defaultProps = {};
 
 export default Icon;

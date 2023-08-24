@@ -1,7 +1,39 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Icon from "./Icon";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
+import {
+  PythonOriginal,
+  JavascriptOriginal,
+  CplusplusOriginal,
+  COriginal,
+  ReactOriginal,
+  Html5Original,
+  Css3Original,
+  JavaOriginal,
+  TailwindcssPlain,
+  FigmaOriginal,
+  LinuxOriginal,
+  GitOriginal,
+  NpmOriginalWordmark,
+  NodejsOriginal,
+  NextjsOriginal,
+  ElectronOriginal,
+  ExpressOriginal,
+  FlaskOriginal,
+  NumpyOriginal,
+  FirebasePlain,
+  MatlabOriginal,
+  MongodbOriginal,
+  MysqlOriginal,
+  TypescriptOriginal,
+  ThreejsOriginalWordmark,
+  AmazonwebservicesOriginal,
+  DockerOriginal,
+  KotlinOriginal,
+  SwiftOriginal,
+} from "devicons-react";
 
 import SlideUp from "./SlideUp";
 
@@ -9,10 +41,12 @@ const projects = [
   {
     name: "ORCO App Executable",
     description:
-      "The ORCO desktop app provides control and visualization for Origin Robots Company's prosthetic arm. Prototyped with Figma, built with electronJS and soon to be ported to React.",
+      "The ORCO desktop app provides control and visualization for Origin Robots Company's prosthetic arm. Prototyped with Figma, built with electronJS and React.",
     image: "/orcoThumbnail.png",
     github: "https://github.com/Origin-Robots-Company/AppDev",
     link: "https://www.originrobots.com/",
+    primary: "React",
+    secondary: "Electron",
   },
   {
     name: "Ludobots",
@@ -29,6 +63,8 @@ const projects = [
     image: "/portfolioThumbnail.png",
     github: "https://github.com/Manu-Deva/Manu-Deva.github.io",
     link: "https://manudeva.com",
+    primary: "React",
+    secondary: "TailwindCSS",
   },
   {
     name: "TetrisC",
@@ -37,6 +73,7 @@ const projects = [
     image: "/tetrisThumbnail.png",
     github: "https://github.com/Manu-Deva/tetrisC",
     link: "https://github.com/Manu-Deva/tetrisC",
+    primary: "C++",
   },
   {
     name: "Mag-2-Web",
@@ -45,6 +82,8 @@ const projects = [
     image: "/mag2webThumbnail.png",
     github: "https://github.com/Manu-Deva/mag2web",
     link: "https://northbynorthwestern.com/winter-2023-magazine/",
+    primary: "HTML",
+    secondary: "Figma",
   },
   {
     name: "OptiSkate",
@@ -92,13 +131,20 @@ const ProjectsSection = () => {
                     <Link href={project.github} target="_blank">
                       <BsGithub size={30} className="project-icon" />
                     </Link>
-
                     <Link href={project.link} target="_blank">
                       <BsArrowUpRightSquare
                         size={30}
                         className="project-icon"
                       />
                     </Link>
+                    {/* <Icon
+                      iconName={project.primary ? project.primary : ""}
+                      size={33}
+                    />
+                    <Icon
+                      iconName={project.secondary ? project.secondary : ""}
+                      size={33}
+                    /> */}
                   </div>
                 </div>
               </div>
