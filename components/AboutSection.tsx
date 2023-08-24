@@ -18,8 +18,8 @@ const skills = [
   { skill: "npm" },
   { skill: "Node.js" },
   { skill: "Next.js" },
+  { skill: "Electron" },
   { skill: "Express" },
-  { skill: "Flask" },
   { skill: "numpy" },
   { skill: "Firebase" },
   { skill: "MATLAB" },
@@ -75,9 +75,9 @@ const AboutSection = () => {
             <br />
             <p>
               My hobbies and passions include basketball, gaming, clothing
-              design, music production, art, and more. I'm always trying to
-              integrate these passions with my skills in computer science and
-              make them more fun!
+              design, reading, art, and more. I'm always trying to integrate
+              these passions with my skills in computer science and make them
+              more fun!
             </p>
             <br />
           </div>
