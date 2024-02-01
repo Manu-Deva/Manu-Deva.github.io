@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Icon from "./Icon";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
-// import VerticalCarousel from "./VerticalCarousel";
 import {
   PythonOriginal,
   JavascriptOriginal,
