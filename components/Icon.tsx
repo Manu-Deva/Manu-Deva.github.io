@@ -28,6 +28,8 @@ import {
   DockerOriginal,
   KotlinOriginal,
   SwiftOriginal,
+  ScalaOriginal,
+  SqliteOriginal,
   BehanceOriginal,
 } from "devicons-react";
 
@@ -61,13 +63,14 @@ function Icon({ iconName, size = 40 }: IconProps) {
     Firebase: FirebasePlain,
     MATLAB: MatlabOriginal,
     MongoDB: MongodbOriginal,
-    MySQL: MysqlOriginal,
+    SQLite: SqliteOriginal,
     TypeScript: TypescriptOriginal,
     ThreeJS: ThreejsOriginalWordmark,
     AWS: AmazonwebservicesOriginal,
     Docker: DockerOriginal,
     Kotlin: KotlinOriginal,
     Swift: SwiftOriginal,
+    Scala: ScalaOriginal,
   };
   var SomeIcon =
     iconName in icons ? icons[iconName as keyof typeof icons] : PythonOriginal;

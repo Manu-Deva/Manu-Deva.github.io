@@ -69,7 +69,7 @@ const HeroSection = () => {
               <BsLinkedin size={30} className="project-icon" />
             </a>
             <a
-              href={"./public/MD0723.pdf"}
+              href={"/Manu_Deva_Resume.pdf"}
               target="_blank"
               className="self-center"
             >
