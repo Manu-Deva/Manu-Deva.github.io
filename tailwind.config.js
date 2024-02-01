@@ -47,6 +47,7 @@ module.exports = {
         "sage-green-4": "#e0e9d8",
         "sage-green-5": "#abc5ae",
         "sage-green-6": "#b6ceb8",
+        "good-green": "#a3bd90",
         "brown-1": "#6b5a48",
         "dark-brown-1": "#4a3e32",
         "cream-1": "#e7d8c9",
