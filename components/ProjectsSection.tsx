@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Icon from "./Icon";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
+// import VerticalCarousel from "./VerticalCarousel";
 import {
   PythonOriginal,
   JavascriptOriginal,
@@ -39,6 +40,46 @@ import SlideUp from "./SlideUp";
 
 const projects = [
   {
+    name: "PAM",
+    description:
+      "A virtual AI receptionist for the Northwestern Computer Science department that streamlines access to information on professors and department events. PAM is powered by a custom-made LLM using OpenAI, Hugging Face, and SQlite3, deployed as a Flask application.",
+    image: "/pamThumbnail.png",
+    github: "https://github.com/sibster146/PAM-NU-Comp-Sci-AI-Secretary/",
+    link: "https://vimeo.com/908564340?share=copy",
+    primary: "Python",
+    secondary: "SQL",
+  },
+  {
+    name: "IntervU",
+    description:
+      "A Python program that uses computer vision algorithms and Tensorflow models to track an applicant’s body posture, expressions, and eye movements to encourage appropriate body language during an interview, with a Flask backend and React frontend in progress.",
+    image: "/intervuThumbnail.png",
+    github: "https://github.com/peterchwl/intervU",
+    link: "https://devpost.com/software/intervu-42fwji",
+    primary: "Python",
+    secondary: "React",
+  },
+
+  {
+    name: "OptiSkate",
+    description:
+      "A simple solution to sensing and illuminating the ground when skateboarding at night. Ideated, rapidly prototyped, developed, and tested over 10 weeks of market research for an engineering design class.",
+    image: "/optiskateThumbnail.jpg",
+    github: "https://github.com/Manu-Deva/tetrisC",
+    link: "https://optiskate.notion.site/optiskate/OptiSkate-edfeacaf60084daf95c0c4714756cdc9",
+  },
+  {
+    name: "Netflix Redesign",
+    description:
+      "A Figma prototyping of a redesigned interface for Netflix based on user interviews, implementing dynamic UI and HCI design standards.",
+    image: "/netflixThumbnail.png",
+    github: "https://github.com/Origin-Robots-Company/AppDev",
+    link: "https://www.figma.com/proto/zw6Z6wLrxZhhuzg8Xji45i/A8%3A-Final-Prototype?node-id=15-4550&starting-point-node-id=15%3A4550&t=qc9uclMYRPxWWg5E-1&mode=design",
+    primary: "Figma",
+    secondary: "Figma",
+  },
+
+  {
     name: "ORCO App Executable",
     description:
       "The ORCO desktop app provides control and visualization for Origin Robots Company's prosthetic arm. Prototyped with Figma, built with electronJS and React.",
@@ -57,16 +98,6 @@ const projects = [
     link: "https://www.youtube.com/watch?v=BKG4CtIoVcM",
   },
   {
-    name: "Portfolio Website",
-    description:
-      "This website was built with NextJS and TailwindCSS. It is a work in progress and I am always looking for ways to improve it!",
-    image: "/portfolioThumbnail.png",
-    github: "https://github.com/Manu-Deva/Manu-Deva.github.io",
-    link: "https://manudeva.com",
-    primary: "React",
-    secondary: "TailwindCSS",
-  },
-  {
     name: "TetrisC",
     description:
       "TetrisC is a rework of the popular Tetris game built in C++ with the ge211 game engine.",
@@ -76,6 +107,17 @@ const projects = [
     primary: "C++",
   },
   {
+    name: "Portfolio Website",
+    description:
+      "This website was built with NextJS and TailwindCSS. It is a work in progress and I am always looking for ways to improve it!",
+    image: "/portfolioThumbnail.png",
+    github: "https://github.com/Manu-Deva/Manu-Deva.github.io",
+    link: "https://manudeva.com",
+    primary: "React",
+    secondary: "TailwindCSS",
+  },
+
+  {
     name: "Mag-2-Web",
     description:
       "A collection of digital editions of North By Northwestern's magazine articles, designed by me as an Interactives Editor for NbN.",
@@ -84,14 +126,6 @@ const projects = [
     link: "https://northbynorthwestern.com/winter-2023-magazine/",
     primary: "HTML",
     secondary: "Figma",
-  },
-  {
-    name: "OptiSkate",
-    description:
-      "A simple solution to sensing and illuminating the ground when skateboarding at night. Ideated, rapidly prototyped, developed, and tested over 10 weeks of market research for an engineering design class.",
-    image: "/optiskateThumbnail.jpg",
-    github: "https://github.com/Manu-Deva/tetrisC",
-    link: "https://optiskate.notion.site/optiskate/OptiSkate-edfeacaf60084daf95c0c4714756cdc9",
   },
 ];
 
@@ -137,14 +171,6 @@ const ProjectsSection = () => {
                         className="project-icon"
                       />
                     </Link>
-                    {/* <Icon
-                      iconName={project.primary ? project.primary : ""}
-                      size={33}
-                    />
-                    <Icon
-                      iconName={project.secondary ? project.secondary : ""}
-                      size={33}
-                    /> */}
                   </div>
                 </div>
               </div>
