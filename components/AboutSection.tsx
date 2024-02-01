@@ -58,9 +58,9 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              I'm the current CTO of Student Holdings, a student-run business
-              catering to Northwestern students in Evanston, IL. I'm also an app
-              developer intern at Origin Robots Company, a robotics startup
+              I'm the former CTO of Student Holdings, a student-run business
+              catering to Northwestern students in Evanston, IL. I was also an
+              app developer intern at Origin Robots Company, a robotics startup
               focused on creating prostheses for bionics research and amputees.
             </p>
             <br />
