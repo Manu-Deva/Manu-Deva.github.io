@@ -29,7 +29,7 @@ const HeroSection = () => {
           </h1>
           <p className="text-lg mt-3 mb-6 md:text-2xl">
             {" "}
-            I&#39;m an aspiring software engineer studying at{" "}
+            I&#39;m a software engineer studying at{" "}
             <a
               href="https://www.mccormick.northwestern.edu/computer-science/"
               target="_blank"
@@ -39,7 +39,7 @@ const HeroSection = () => {
               Northwestern University{" "}
             </a>
             in Evanston, IL. Working on improving my full-stack development
-            skills and enhancing quality of life for people.
+            skills to enhance the quality of life for people.
           </p>
           <div className="flex flex-row space-x-4 justify-center md:justify-start">
             <Link

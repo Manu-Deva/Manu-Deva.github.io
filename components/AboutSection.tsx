@@ -68,14 +68,13 @@ const AboutSection = () => {
               I code primarily in Python for data structures, machine learning,
               and app development, with experience in C++ and Java. I also do
               computer systems programming in C and Linux and app development
-              with React, Javascript, and other frameworks. I hope to eventually
-              integrate my interest in economics with computer science as a
-              developer.
+              with React, Javascript, and other frameworks. I hope to integrate
+              my interest in economics with computer science as a developer.
             </p>
             <br />
             <p>
               My hobbies and passions include basketball, gaming, clothing
-              design, reading, art, and more. I'm always trying to integrate
+              design, reading, dance, and more. I'm always trying to integrate
               these passions with my skills in computer science and make them
               more fun!
             </p>
