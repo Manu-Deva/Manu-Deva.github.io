@@ -49,16 +49,16 @@ const AboutSection = () => {
             <h1 className="about-title">Get to know me!</h1>
             <p>
               {" "}
-              Hi, I'm Manu and I am a{" "}
-              <span className="font-bold">{"curious"}</span>,
-              <span className="font-bold"> {"passionate"}</span>, and
-              <span className="font-bold"> {"dedicated"}</span> student based at
-              Northwestern University in Evanston, IL. I'm a rising junior
-              majoring in Computer Science with a minor in Economics.
+              Hi, I'm Manu and I attend Northwestern University in Evanston,
+              Illinois. I'm a <span className="font-bold">{"inquisitive"}</span>
+              ,<span className="font-bold"> {"enthusiastic"}</span>, and
+              <span className="font-bold"> {"committed"}</span> student. As a
+              junior, I am pursuing a major in Computer Science, complemented by
+              a minor in Economics.
             </p>
             <br />
             <p>
-              I'm the former CTO of Student Holdings, a student-run business
+              I'm the current CTO of Student Holdings, a student-run business
               catering to Northwestern students in Evanston, IL. I was also an
               app developer intern at Origin Robots Company, a robotics startup
               focused on creating prostheses for bionics research and amputees.
