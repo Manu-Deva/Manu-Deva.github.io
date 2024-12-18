@@ -36,9 +36,9 @@ const HeroSection = () => {
               className="font-semibold text-purple-800"
             >
               {/* <span className="font-semibold text-purple-800"> */}
-              Northwestern University{" "}
+              Northwestern University
             </a>
-            in Evanston, IL. Working on improving my full-stack development
+            , Evanston, IL. Working on improving my full-stack development
             skills to enhance the quality of life for people.
           </p>
           <div className="flex flex-row space-x-4 justify-center md:justify-start">

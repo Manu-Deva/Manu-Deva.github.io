@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ThreejsOriginal, JavascriptOriginal } from "devicons-react";
 import Icon from "./Icon";
 const skills = [
@@ -49,19 +50,41 @@ const AboutSection = () => {
             <h1 className="about-title">Get to know me!</h1>
             <p>
               {" "}
-              Hi, I'm Manu and I attend Northwestern University in Evanston,
-              Illinois. I'm a <span className="font-bold">{"inquisitive"}</span>
-              ,<span className="font-bold"> {"enthusiastic"}</span>, and
+              Hi, I'm Manu and I attend Northwestern University, Evanston,
+              Illinois. I'm a{" "}
+              <span className="font-bold">{"problem solver"}</span>, and an{" "}
+              <span className="font-bold">{"inquisitive"}</span>,
+              <span className="font-bold"> {"enthusiastic"}</span>, and
               <span className="font-bold"> {"committed"}</span> student. As a
-              junior, I am pursuing a major in Computer Science, complemented by
-              a minor in Economics.
+              graduating senior, I am pursuing a major in Computer Science,
+              complemented by a minor in Economics.
             </p>
             <br />
             <p>
-              I'm the current CTO of Student Holdings, a student-run business
-              catering to Northwestern students in Evanston, IL. I was also an
-              app developer intern at Origin Robots Company, a robotics startup
-              focused on creating prostheses for bionics research and amputees.
+              I'm the current CTO of{" "}
+              <Link
+                href="https://www.studentholdings.org/"
+                className="font-bold"
+              >
+                Student Holdings
+              </Link>
+              , a student-run business catering to Northwestern students in
+              Evanston, IL, as well as a Data Science Intern with the{" "}
+              <Link
+                href="https://sonic.northwestern.edu/"
+                className="font-bold"
+              >
+                SONIC Research Group
+              </Link>{" "}
+              at Northwestern. At SONIC I specialize in building custom
+              sentiment analysis tools using machine learning for social
+              networks research.
+            </p>
+            <br />
+            <p>
+              I was also an app developer intern at Origin Robots Company, a
+              robotics startup focused on creating prostheses for bionics
+              research and amputees.
             </p>
             <br />
             <p>

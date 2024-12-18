@@ -12,7 +12,7 @@ import {
   Html5Original,
   Css3Original,
   JavaOriginal,
-  TailwindcssPlain,
+  TailwindcssOriginal,
   FigmaOriginal,
   LinuxOriginal,
   GitOriginal,
@@ -29,15 +29,46 @@ import {
   MysqlOriginal,
   TypescriptOriginal,
   ThreejsOriginalWordmark,
-  AmazonwebservicesOriginal,
+  AmazonwebservicesOriginalWordmark,
   DockerOriginal,
   KotlinOriginal,
   SwiftOriginal,
+  FirebaseOriginal,
 } from "devicons-react";
 
 import SlideUp from "./SlideUp";
 
 const projects = [
+  {
+    name: "SuggestME",
+    description:
+      "SuggestME is a full-stack app that lets users explore artists, view shows, and get music recommendations. Built with a Next.js frontend and a serverless AWS Lambda backend, it integrates the Spotify, Ticketmaster, and OpenWeatherMap APIs for seamless playlist management and personalized music discovery.",
+    image: "/suggestMeThumbnail.png",
+    github: "https://github.com/Manu-Deva/suggestME",
+    link: "",
+    primary: "AWS",
+    secondary: "Next.js",
+  },
+  {
+    name: "RetroScan",
+    description:
+      "An embedded systems project using the Microbit v2 microcontroller and various sensors to enable RFID tagging and display of vinyl and VHS media. This project features custom-written libraries for the Nordic nRF52833 SoC utilizing I2C, SPI, and ADC communication, written in C.",
+    image: "/retroscanThumbnail.jpg",
+    github: "https://github.com/sibster146/PAM-NU-Comp-Sci-AI-Secretary/",
+    link: "https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2024/microcontroller-system-design-students-demo-final-projects.html",
+    primary: "C",
+    secondary: "Linux",
+  },
+  {
+    name: "Tamagotchi",
+    description:
+      "A web app deployed on Next.js and Firebase that accurately digitizes the Tamagotchi experience! It features a persistent state powered by Context API and FireStore, interactive actions and logging, and authenticated multiple-user support. Written in TypeScript and styled with Tailwind.",
+    image: "/tamagotchiThumbnail.png",
+    github: "https://github.com/Manu-Deva/tamagotchi-396",
+    link: "https://my-pet-app-e2418.web.app/",
+    primary: "TypeScript",
+    secondary: "Firebase",
+  },
   {
     name: "PAM",
     description:
@@ -46,7 +77,7 @@ const projects = [
     github: "https://github.com/sibster146/PAM-NU-Comp-Sci-AI-Secretary/",
     link: "https://vimeo.com/908564340?share=copy",
     primary: "Python",
-    secondary: "SQL",
+    secondary: "SQLite",
   },
   {
     name: "IntervU",
@@ -66,6 +97,8 @@ const projects = [
     image: "/optiskateThumbnail.jpg",
     github: "https://github.com/Manu-Deva/tetrisC",
     link: "https://optiskate.notion.site/optiskate/OptiSkate-edfeacaf60084daf95c0c4714756cdc9",
+    primary: "Python",
+    secondary: "RaspberryPi",
   },
   {
     name: "Netflix Redesign",
@@ -75,7 +108,7 @@ const projects = [
     github: "https://github.com/Origin-Robots-Company/AppDev",
     link: "https://www.figma.com/proto/zw6Z6wLrxZhhuzg8Xji45i/A8%3A-Final-Prototype?node-id=15-4550&starting-point-node-id=15%3A4550&t=qc9uclMYRPxWWg5E-1&mode=design",
     primary: "Figma",
-    secondary: "Figma",
+    secondary: "",
   },
 
   {
@@ -112,7 +145,7 @@ const projects = [
     image: "/portfolioThumbnail.png",
     github: "https://github.com/Manu-Deva/Manu-Deva.github.io",
     link: "https://manudeva.com",
-    primary: "React",
+    primary: "Next.js",
     secondary: "TailwindCSS",
   },
 
@@ -170,6 +203,10 @@ const ProjectsSection = () => {
                         className="project-icon"
                       />
                     </Link>
+                    <Icon iconName={project.primary ?? ""} size={30} />
+                    {project.secondary && (
+                      <Icon iconName={project.secondary ?? ""} size={30} />
+                    )}
                   </div>
                 </div>
               </div>
