@@ -54,7 +54,7 @@ const projects = [
     description:
       "An embedded systems project using the Microbit v2 microcontroller and various sensors to enable RFID tagging and display of vinyl and VHS media. This project features custom-written libraries for the Nordic nRF52833 SoC utilizing I2C, SPI, and ADC communication, written in C.",
     image: "/retroscanThumbnail.jpg",
-    github: "https://github.com/sibster146/PAM-NU-Comp-Sci-AI-Secretary/",
+    github: "https://github.com/Manu-Deva/RetroScan",
     link: "https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2024/microcontroller-system-design-students-demo-final-projects.html",
     primary: "C",
     secondary: "Linux",
