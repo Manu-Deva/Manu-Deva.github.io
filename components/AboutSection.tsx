@@ -24,17 +24,14 @@ const skills = [
   { skill: "Next.js" },
   { skill: "Electron" },
   { skill: "Express" },
-  //   { skill: "numpy" },
-  //   { skill: "Firebase" },
-  //   { skill: "MATLAB" },
 ];
 
 const workingSkills = [
-  //   { skill: "ThreeJS" },
   { skill: "Docker" },
   { skill: "Scala" },
   { skill: "Kotlin" },
   { skill: "Swift" },
+  { skill: "MLOps" },
 ];
 
 const AboutSection = () => {
@@ -49,59 +46,29 @@ const AboutSection = () => {
           <div className="md:w-1/2">
             <h1 className="about-title">Get to know me!</h1>
             <p>
-              {" "}
-              Hi, I'm Manu and I attend Northwestern University, Evanston,
-              Illinois. I'm a{" "}
-              <span className="font-bold">{"problem solver"}</span>, and an{" "}
-              <span className="font-bold">{"inquisitive"}</span>,
-              <span className="font-bold"> {"enthusiastic"}</span>, and
-              <span className="font-bold"> {"committed"}</span> student. As a
-              graduating senior, I am pursuing a major in Computer Science,
-              complemented by a minor in Economics.
+              I am an Associate Software Engineer at UKG building TypeScript
+              service layers and Java backends for AI-driven workforce platforms.
+              I graduated from Northwestern University (B.S. Computer Science,
+              minor in Economics) in June 2025. I work across backend, frontend,
+              and MLOps — shipping features, improving observability, and
+              automating tests and CI/CD. Reach me at manu.deva@gmail.com.
             </p>
             <br />
-            <p>
-              I'm the current CTO of{" "}
-              <Link
-                href="https://www.studentholdings.org/"
-                className="font-bold"
-              >
-                Student Holdings
-              </Link>
-              , a student-run business catering to Northwestern students in
-              Evanston, IL, as well as a Data Science Intern with the{" "}
-              <Link
-                href="https://sonic.northwestern.edu/"
-                className="font-bold"
-              >
-                SONIC Research Group
-              </Link>{" "}
-              at Northwestern. At SONIC I specialize in building custom
-              sentiment analysis tools using machine learning for social
-              networks research.
-            </p>
-            <br />
-            <p>
-              I was also an app developer intern at Origin Robots Company, a
-              robotics startup focused on creating prostheses for bionics
-              research and amputees.
-            </p>
-            <br />
-            <p>
-              I code primarily in Python for data structures, machine learning,
-              and app development, with experience in C++ and Java. I also do
-              computer systems programming in C and Linux and app development
-              with React, Javascript, and other frameworks. I hope to integrate
-              my interest in economics with computer science as a developer.
-            </p>
-            <br />
-            <p>
-              My hobbies and passions include basketball, gaming, clothing
-              design, reading, dance, and more. I'm always trying to integrate
-              these passions with my skills in computer science and make them
-              more fun!
-            </p>
-            <br />
+            <h1 className="about-title">Current Focus</h1>
+            <ul className="list-disc pl-6">
+              <li>
+                Develop TypeScript service layers and REST APIs in Java/Node for
+                workforce insights.
+              </li>
+              <li>
+                Implement CI/CD with Jenkins and Kubernetes; write integration
+                tests with Playwright.
+              </li>
+              <li>
+                Prototype full-stack features integrating LLMs and data
+                pipelines.
+              </li>
+            </ul>
           </div>
           <div className="md:w-1/2">
             <h1 className="about-title">My Skills</h1>

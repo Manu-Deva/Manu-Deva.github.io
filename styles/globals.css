@@ -4,7 +4,7 @@
 
 @layer components {
   .about-title {
-    @apply text-center text-2xl font-bold mb-6 md:text-left;
+    @apply text-center text-2xl font-bold mb-4 md:text-left;
   }
   .project-icon {
     @apply hover:-translate-y-1 transition-transform cursor-pointer;

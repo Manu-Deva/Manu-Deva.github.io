@@ -1,79 +1,112 @@
 import React from "react";
 import {
+  // Languages
   PythonOriginal,
   JavascriptOriginal,
   CplusplusOriginal,
   COriginal,
-  ReactOriginal,
-  Html5Original,
-  Css3Original,
   JavaOriginal,
-  TailwindcssOriginal,
-  FigmaOriginal,
-  LinuxOriginal,
-  GitOriginal,
-  NpmOriginalWordmark,
-  NodejsOriginal,
-  NextjsOriginal,
-  ElectronOriginal,
-  ExpressOriginal,
-  FirebasePlain,
-  FirebaseOriginal,
-  NumpyOriginal,
-  MatlabOriginal,
-  MongodbOriginal,
-  MysqlOriginal,
   TypescriptOriginal,
-  ThreejsOriginalWordmark,
-  AmazonwebservicesOriginalWordmark,
-  DockerOriginal,
-  KotlinOriginal,
-  SwiftOriginal,
-  ScalaOriginal,
-  SqliteOriginal,
-  BehanceOriginal,
-  RaspberrypiOriginal,
-} from "devicons-react";
 
-("use-client");
+  // Frameworks & Libraries
+  ReactOriginal,
+  TailwindcssOriginal,
+  NextjsOriginal,
+  NodejsOriginal,
+  SpringOriginal,
+  ElectronOriginal,
+  AngularOriginal,
+
+  // Dev Tools & Infrastructure
+  GitOriginal,
+  LinuxOriginal,
+  DockerOriginal,
+  KubernetesOriginal,
+  JenkinsOriginal,
+  PostmanOriginal,
+  NpmOriginalWordmark,
+  FigmaOriginal,
+
+  // Cloud & Databases
+  AmazonwebservicesOriginalWordmark,
+  AzureOriginal,
+  PostgresqlOriginal,
+  SqliteOriginal,
+  SupabaseOriginal,
+
+  // ML/AI
+  TensorflowOriginal,
+  PytorchOriginal,
+
+  // Other
+  SplunkOriginalWordmark,
+  ApachekafkaOriginal,
+  PlaywrightOriginal,
+} from "devicons-react";
 
 interface IconProps {
   iconName: string;
   size?: number;
+  imageSrc?: string;
 }
 
-function Icon({ iconName, size = 40 }: IconProps) {
+function Icon({ iconName, size = 40, imageSrc }: IconProps) {
+  // If imageSrc is provided, render as image thumbnail
+  if (imageSrc) {
+    return (
+      <div className="app">
+        <img
+          src={imageSrc}
+          alt={iconName}
+          width={size}
+          height={size}
+          className="rounded"
+        />
+      </div>
+    );
+  }
+
   const icons = {
+    // Languages
+    Java: JavaOriginal,
     Python: PythonOriginal,
+    TypeScript: TypescriptOriginal,
     JavaScript: JavascriptOriginal,
-    React: ReactOriginal,
     "C++": CplusplusOriginal,
     C: COriginal,
-    HTML: Html5Original,
-    CSS: Css3Original,
-    Java: JavaOriginal,
+
+    // Frameworks & Libraries
+    React: ReactOriginal,
     TailwindCSS: TailwindcssOriginal,
-    Figma: FigmaOriginal,
-    Linux: LinuxOriginal,
-    Git: GitOriginal,
-    npm: NpmOriginalWordmark,
-    "Node.js": NodejsOriginal,
+    Spring: SpringOriginal,
     "Next.js": NextjsOriginal,
+    "Node.js": NodejsOriginal,
     Electron: ElectronOriginal,
-    Express: ExpressOriginal,
-    numpy: NumpyOriginal,
-    Firebase: FirebaseOriginal,
-    MATLAB: MatlabOriginal,
-    MongoDB: MongodbOriginal,
-    RaspberryPi: RaspberrypiOriginal,
-    SQLite: SqliteOriginal,
-    TypeScript: TypescriptOriginal,
-    ThreeJS: ThreejsOriginalWordmark,
+    Angular: AngularOriginal,
+    TensorFlow: TensorflowOriginal,
+    PyTorch: PytorchOriginal,
+
+    // Dev Tools & Infrastructure
+    Git: GitOriginal,
+    Linux: LinuxOriginal,
     AWS: AmazonwebservicesOriginalWordmark,
+    Azure: AzureOriginal,
     Docker: DockerOriginal,
-    Kotlin: KotlinOriginal,
-    Swift: SwiftOriginal,
-    Scala: ScalaOriginal,
+    Kubernetes: KubernetesOriginal,
+    Jenkins: JenkinsOriginal,
+    npm: NpmOriginalWordmark,
+    SQLite: SqliteOriginal,
+    Postman: PostmanOriginal,
+    Figma: FigmaOriginal,
+
+    // Databases
+    PostgreSQL: PostgresqlOriginal,
+    Supabase: SupabaseOriginal,
+
+    // Other
+    Splunk: SplunkOriginalWordmark,
+    Kafka: ApachekafkaOriginal,
+    Playwright: PlaywrightOriginal,
   };
   var SomeIcon =
     iconName in icons ? icons[iconName as keyof typeof icons] : PythonOriginal;

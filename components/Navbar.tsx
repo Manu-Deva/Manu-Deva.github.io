@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { Link } from "react-scroll/modules";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
@@ -13,15 +14,23 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Home",
-    page: "home",
+    page: "/",
   },
   {
     label: "About",
-    page: "about",
+    page: "/about",
+  },
+  {
+    label: "Work",
+    page: "/work",
   },
   {
     label: "Projects",
-    page: "projects",
+    page: "/projects",
+  },
+  {
+    label: "Contact",
+    page: "/contact",
   },
 ];
 
@@ -29,13 +38,14 @@ const Navbar = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
   const [navbar, setNavbar] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="w-full mx-auto px-4 bg-sage-green-1 shadow fixed top-0 z-50 sm:px-20 dark:bg-stone-900 dark:border-b dark:border-stone-600">
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3">
-            <Link to="home" className="cursor-pointer">
+            <Link href="/" className="cursor-pointer">
               <div className="md:py-5 md:block">
                 <h2 className="text-2xl font-bold">Manu Deva</h2>
               </div>
@@ -55,18 +65,16 @@ const Navbar = () => {
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {NAV_ITEMS.map((item, idx) => {
+                const isActive = pathname === item.page;
                 return (
                   <Link
                     key={idx}
-                    to={item.page}
-                    className={
-                      "block lg:inline-block text-base md:text-lg font-bold text-neutral-900 hover:text-brown-1 dark:text-neutral-100"
-                    }
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={500}
+                    href={item.page}
+                    className={`block lg:inline-block text-base md:text-lg font-bold transition-colors ${
+                      isActive
+                        ? "text-brown-1 dark:text-brown-1"
+                        : "text-neutral-900 hover:text-brown-1 dark:text-neutral-100"
+                    }`}
                     onClick={() => setNavbar(!navbar)}
                   >
                     {item.label}

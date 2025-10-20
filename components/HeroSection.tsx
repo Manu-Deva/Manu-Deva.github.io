@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className="md:w-1/2 md:mt-2">
           <Image
             className="rounded-full shadow-2xl"
-            src="/headshot.png"
+            src="/newheadshot.jpeg"
             alt="Manu Deva"
             width={300}
             height={300}
@@ -24,22 +24,16 @@ const HeroSection = () => {
         </div>
         <div className="md:mt-2 md:w-3/5">
           <h1 className="font-bold text-4xl mt-6 md:text-7xl md:mt-0">
-            {" "}
             Hi, I&#39;m Manu.
           </h1>
-          <p className="text-lg mt-3 mb-6 md:text-2xl">
-            {" "}
-            I&#39;m a software engineer studying at{" "}
-            <a
-              href="https://www.mccormick.northwestern.edu/computer-science/"
-              target="_blank"
-              className="font-semibold text-purple-800"
-            >
-              {/* <span className="font-semibold text-purple-800"> */}
-              Northwestern University
-            </a>
-            , Evanston, IL. Working on improving my full-stack development
-            skills to enhance the quality of life for people.
+          <p className="text-lg mt-3 mb-1 md:text-xl font-semibold text-neutral-700">
+            Associate Software Engineer at UKG | Northwestern University ’25
+          </p>
+
+          <p className="text-md mt-3 mb-6 md:text-2xl">
+            I build full‑stack systems — Java backends, TypeScript/React
+            frontends, and AI/ML integrations — focusing on production
+            reliability, observability, and scalable CI/CD workflows.
           </p>
           <div className="flex flex-row space-x-4 justify-center md:justify-start">
             <Link
@@ -69,7 +63,7 @@ const HeroSection = () => {
               <BsLinkedin size={30} className="project-icon" />
             </a>
             <a
-              href={"/Manu_Deva_Resume.pdf"}
+              href={"/Manu_Deva_resume.pdf"}
               target="_blank"
               className="self-center"
             >
